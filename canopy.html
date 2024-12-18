@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canopy Solutions - Printing & Branding</title>
+    <style>
+        /* Basic Styles */
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        header {
+            background-color: #333;
+            color: rgb(242, 240, 240);
+            padding: 20px;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Times New Roman', Times, serif, 'Trebuchet MS', sans-serif;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: rgba(242, 240, 240, 0.568);
+            text-decoration: none;
+        }
+        
+        .hero {
+            position: relative;
+            height: 500px;
+            overflow: hidden;
+        }
+        
+        .hero .slider img {
+            width: 100%;
+            height: 20%;
+            display: none;
+        }
+        
+        .about,
+        #services,
+        #portfolio,
+        #contact,
+        #order {
+            padding: 50px;
+            text-align: center;
+        }
+        
+        .service-grid,
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+        
+        .service-item,
+        .portfolio-item {
+            border: 1px solid #ddd;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .service-item:hover,
+        .portfolio-item:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        form input,
+        form select,
+        form textarea,
+        form button {
+            padding: 10px;
+            width: 100%;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            display: none;
+        }
+        
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="logo">
+            <h1>Canopy Solutions</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#order">Order Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <div class="slider">
+            <img src="Food_Flyer_Menu_Poster.jpeg" class="slide" style="display: block;">
+            <img src="Tumblr niedliche ästhetische Logo Aufkleber bearbeiten Overlay NASA Thrasher Vanz Santa Cruz ___.jpeg" class="slide">
+            <img src="Charity Billboard Templates.jpeg" class="slide">
+        </div>
+    </section>
+
+
+    <section class="about">
+        <h2>About Canopy Solutions</h2>
+        <p>We specialize in providing top-quality printing and branding solutions for a variety of products, including mugs, T-shirts, banners, and more.</p>
+    </section>
+
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <img src="Sublimate Ceramic Mugs with Sublimation Printer & Mug Press.jpeg" alt="Mugs">
+                <p>Custom Mug Printing</p>
+            </div>
+            <div class="service-item">
+                <img src="Hoodie Personality Black.jpeg" alt="Hoodie">
+                <p>Branded T-Shirts & Hoodies</p>
+            </div>
+            <div class="service-item">
+                <img src="Creative Restaurant Shop Roll-Up Banner PSD.jpeg" alt="Banners">
+                <p>Banners & Posters</p>
+            </div>
+            <div class="service-item">
+                <img src="Free Business Card Templates _ _ Graphic Design Junction.jpeg" alt="Business cards and invitation">
+                <p>Cards & Invitations</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="Festival And Beer Printed T-shirt Tee T-shirt Personalised Gift Customised Name Message.jpeg" alt="T-shirt">
+            </div>
+            <div class="portfolio-item">
+                <img src="_Epic since december 1971,cute family gift idea for Mom, Dad & Siblings, birthday_ Cap for Sale by mosaab design.jpeg" alt="Caps">
+            </div>
+            <div class="portfolio-item">
+                <img src="Do What Makes You Happy Hoodie, Women's Aesthetic Sweatshirt, Inspirational Quotes Shirt, Trendy Tumblr Hoodie with Words on Back, E5724.jpeg" alt="Happy hoodies">
+            </div>
+            <div class="portfolio-item">
+                <img src="JDM bombshell wallpaper.jpeg" alt="Car Wraps">
+            </div>
+        </div>
+
+
+        <div id="lightbox" class="lightbox">
+            <img src="Do What Makes You Happy Hoodie, Women's Aesthetic Sweatshirt, Inspirational Quotes Shirt, Trendy Tumblr Hoodie with Words on Back, E5724.jpeg" alt="Lightbox Image">
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:tobiasndangili@gmail.com">tobiasndangili@gmail.com</a></p>
+        <p>Phone: +254745381145</p>
+    </section>
+
+
+    <section id="order">
+        <h2>Place Your Order</h2>
+        <form id="order-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="service">Service:</label>
+            <select id="service" name="service">
+                <option value="mugs">Mugs/Cups</option>
+                <option value="tshirts">T-Shirts/Hoodies</option>
+                <option value="banners">Banners</option>
+                <option value="cards">Cards & Invitations</option>
+            </select>
+
+            <label for="description">Item Description:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" required>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <p>© 2024 Canopy Solutions. All rights reserved.</p>
+    </footer>
+
+
+    <button id="back-to-top" style="display: none;">Back to Top</button>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll(".slide");
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.style.display = 'none');
+            slides[index].style.display = 'block';
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide, 3000);
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+        const lightbox = document.getElementById('lightbox');
+
+        portfolioItems.forEach(item => {
+            item.addEventListener('click', () => {
+                lightbox.style.display = 'flex';
+                lightbox.querySelector('img').src = item.querySelector('img').src;
+            });
+        });
+
+        lightbox.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+
+
+        document.getElementById('order-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Your order has been submitted successfully!');
+        });
+
+
+        const topButton = document.getElementById('back-to-top');
+        window.onscroll = () => {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                topButton.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>
